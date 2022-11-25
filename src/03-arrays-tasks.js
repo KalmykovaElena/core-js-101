@@ -53,8 +53,8 @@ function generateOdds(len) {
  *    [0, 1, 2, 3, 4, 5] => [0, 1, 2, 3, 4, 5,   0, 1, 2, 3, 4, 5]
  *    [] => []
  */
-function doubleArray(arr ) {
-  return [...arr,...arr]
+function doubleArray(arr) {
+  return [...arr, ...arr];
 }
 
 
@@ -69,10 +69,8 @@ function doubleArray(arr ) {
  *    [-1, 2, -5, -4, 0] => [ 2 ]
  *    [] => []
  */
-function getArrayOfPositives( arr ) {
-  return arr.reduce((acc,el)=>{
-    return el>0?[...acc,el]:acc
-  },[])
+function getArrayOfPositives(arr) {
+  return arr.reduce((acc, el) => (el > 0 ? [...acc, el] : acc));
 }
 
 /**
